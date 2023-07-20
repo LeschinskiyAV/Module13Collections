@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
-namespace PhoneBook
-{
-    class Program
+namespace StopWatchOne
+{ 
+    public class Program
     {
-        private static List<int> BenchList = new List<int>()
-        { };
-
-        static void Main(string[] args)
+        static void Main()
         {
-            var watch = Stopwatch.StartNew();
-            BenchList.Add(0);
-            Console.WriteLine($"Вставка List: {watch.Elapsed.TotalMilliseconds} мс");
+            {
+                List<string> list = new List<string>(TextWorker.GetWordsFromFile(TextWorker.filepath));
+                Stopwatch watch = Stopwatch.StartNew();
+                list.Add("smth");
+                Console.WriteLine($"Вставка List: {watch.Elapsed.TotalMilliseconds} мс");
+            }
         }
     }
 }

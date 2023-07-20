@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Task1361\Task1361_StopWatchOne.csproj" />
+  </ItemGroup>
+
 </Project>
