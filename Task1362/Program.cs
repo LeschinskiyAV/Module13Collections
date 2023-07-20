@@ -1,5 +1,5 @@
 ﻿using System.Text.RegularExpressions;
-                                                                                                                       
+
 namespace WordCounter
 {
     class Program
